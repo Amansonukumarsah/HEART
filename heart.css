@@ -1,0 +1,70 @@
+body {
+    margin: 0px;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 50px;
+}
+
+span {
+    background: url('https://cdn1.iconfinder.com/data/icons/photo-stickers-words/128/word_4-512.png');
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    pointer-events: none;
+    background-size: cover;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: aman 6s linear;
+}
+
+@keyframes aman {
+    0% {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+        filter: hue-rotate(0);
+    }
+
+    100% {
+        transform: translate(-50%, -5000%);
+        opacity: 0;
+        filter: hue-rotate(720deg);
+    }
+}
+
+h1 {
+    width: 100px;
+    height: 100px;
+    color: rgb(236, 75, 75);
+    font-size: 100px;
+    font-family: 'Courier New', Courier, monospace;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: sonu 2s linear;
+}
+
+@keyframes sonu {
+    0% {
+        color: pink;
+    }
+
+    10% {
+        color: rgb(125, 218, 118);
+    }
+
+    20% {
+        color: aqua;
+    }
+     30%{
+        color: rgb(140, 140, 220);
+     }
+     40%{
+        color: rgb(146, 100, 189);
+     }
+}
